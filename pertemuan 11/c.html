@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head></head> 
+ <body> 
+       <h1> Hitung Jumlah 2 bilangan </h1>
+       <input type="number" id="bil1" onchange="hasil()"></input>
+       <p>+</p>
+       <input type="number" id="bil2" onchange="hasil()"></input>
+       <p>=</p>
+       <input type="number" id="hasil" readonly></input>
+   <script>
+     function hasil(){
+       let bilPertama = document.getElementById("bil1").value;
+       let bilKedua = document.getElementById("bil2").value;
+       document.getElementById("hasil").value = Number(bilPertama) + Number(bilKedua)
+     }
+   </script>
+ </body>
+</html>
